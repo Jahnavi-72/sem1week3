@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Color Change with CSS Variable</title>
+    <style>
+        :root {
+            --theme-color: gold;
+} 
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--theme-color); 
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+
+.content {
+    padding: 2rem;
+}
+
+h2 {
+    color: var(--theme-color); 
+}
+
+footer {
+    background-color: var(--theme-color); 
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.theme-red {
+    --theme-color: red; 
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Themed Website</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>About Us</h2>
+            <p>We offer a variety of services to help you succeed.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
